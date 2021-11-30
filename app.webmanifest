@@ -1,0 +1,41 @@
+{
+    "name": "Chárlalo",
+    "start_url": "./",
+    "scope": "./",
+    "display": "standalone",
+    "theme_color": "#dc6563",
+    "background_color": "antiquewhite",
+    "description": "Esta app te permite utilizar los servicios de reconocimiento de voz y de pronunciación de texto de tu dispositivo para que puedas charlar con quien quieras.",
+    "icons": [
+        {
+            "src": "imagenes/icono.png",
+            "sizes": "1024x1024",
+            "purpose": "any",
+            "type": "image/png"
+        },
+        {
+            "src": "imagenes/maskable_icono.png",
+            "sizes": "512x512", 
+            "purpose": "maskable",
+            "type": "image/png"
+        }
+    ],
+    "screenshots": [
+        {
+            "src": "imagenes/screenshot1.png",
+            "sizes": "1080x2220",
+            "type": "image/png"
+        },
+        {
+            "src": "imagenes/screenshot2.png",
+            "sizes": "1080x2220",
+            "type": "image/png"
+        },
+        {
+            "src": "imagenes/screenshot3.png",
+            "sizes": "1080x2220",
+            "type": "image/png"
+        }
+    ]
+
+}

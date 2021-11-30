@@ -1,0 +1,92 @@
+<!-- 
+Hola curioso o curiosa, ¿cómo estás?
+Bueno, éste es el simple código fuente de Chárlalo. Fue desarrollado en 1 hora, 34 minutos.
+Todo el código está publicado en https://github.com/firtman/charlalo y es de libre distribución.
+Cualquier duda o consulta, contactame por Twitter a @maxifirtman
+ -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chárlalo - Pasa voz a texto y texto a voz</title>
+    <link rel="icon" href="imagenes/icono.png">
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Meta datos para Progressive Web Apps -->
+    <link rel="manifest" href="app.webmanifest">
+    <meta name="theme-color" content="#dc6563">
+    <!-- Scripts de la aplicación -->
+    <script src="scripts/charlalo.js" defer></script>
+    <script src="scripts/recognition.js" defer></script>
+    <script src="scripts/synthesis.js" defer></script>
+    <script src="scripts/camera.js" defer></script>
+    <!-- Soporte de icono y splash screen automático para iOS -->
+    <script async src="https://cdn.jsdelivr.net/npm/pwacompat" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header>
+        <h1><img src="imagenes/charlalo_titulo.svg" alt="Chárlalo" width="100%"></h1>
+        <button id="instalar" onclick="instalar()">Instalar</button>
+        <nav>
+            <ul>
+                <li><a href="javascript:ir('charla')">Charla</a></li>
+                <li><a href="javascript:ir('pictogramas')">Pictogramas</a></li>
+                <li><a href="javascript:ir('camara')">Cámara</a></li>
+                <li><a href="javascript:ir('ayuda')">?</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Los hijos directo de <main> son las secciones/rutas de la App -->
+    <main>
+        <article id="charla">
+            <h2>Modo Charla</h2>
+            <button id="limpiar" onclick="limpiar()">🗑 Limpiar charla</button>
+            <ul id="mensajes"></ul>
+            <textarea id="mensajeEscrito"></textarea>
+            <section>
+                <button onclick="confirmar()">Confirmar Texto</button>
+                <button id="hablar">Hablar usando la Voz</button>
+            </section>
+        </article>
+
+        <article id="pictogramas">
+            <h2>Modo Pictogramas</h2>
+            <h3>Emergencias</h3>
+            <ul>                
+            </ul>
+            <footer>
+                <p>
+                    The pictographic symbols used are the property of the Government of Aragón and have been created by Sergio Palao for ARASAAC (http://www.arasaac.org), that distributes them under Creative Commons License BY-NC-SA.
+                    Pictograms author: Sergio Palao. Origin: ARASAAC (http://www.arasaac.org). License: CC (BY-NC-SA). Owner: Government of Aragon (Spain)
+                </p>
+            </footer>
+        </article>
+
+        <article id="camara">
+            <h2>Modo Cámara</h2>
+
+            <section>
+                <button onclick="abrirCamara()">Abrir Cámara</button>
+                <video id="video">Cámara no disponible.</video>
+                <button onclick="sacarFoto()">Leer textos de la Cámara</button>
+            </section>
+            <output></output>
+        </article>
+
+        <article id="ayuda">
+            <h2>Ayuda Chárlalo v.0.1</h2>
+            <p>Esta app te permite utilizar los servicios de reconocimiento de voz y de pronunciación de texto de tu dispositivo para que puedas charlar con quien quieras. Por supuesto que esta app NO tiene ninguna patente y es de libre distribución. </p>
+            <p>Podés instalarla en tu teléfono o computadora y funcionará como app usando "Instalar" o "Agregar a Inicio" del menú de tu navegador. No todas las funciones estarán habilitadas en todos los teléfonos. </p>
+            <p>Para el uso de la cámara, en esta versión, se recomienda Chrome en Android y habilitar "Experimental Web Features" si vas a chrome://flags mientras la funcionalidad esté en experimentación.</p>
+
+            <p>Info de licencias usadas: The pictographic symbols used are the property of the Government of Aragón and have been created by Sergio Palao for ARASAAC (http://www.arasaac.org), that distributes them under Creative Commons License BY-NC-SA.
+                Pictograms author: Sergio Palao. Origin: ARASAAC (http://www.arasaac.org). License: CC (BY-NC-SA). Owner: Government of Aragon (Spain).
+           </p>
+           <p>Software libre bajo licencia GPL v3 GNU (General Public License). <a href="https://github.com/firtman/charlalo">Ver código fuente</a>. Creado por <a href="https://firt.dev">Maximiliano Firtman</a> (<a href="https://twitter.com/firt">@firt</a> <a href="https://twitter.com/maxifirtman">@maxifirtman)</a></p>
+        </article>
+
+    </main>
+</body>
+</html>
