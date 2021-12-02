@@ -214,3 +214,7 @@ video {
     display: none;
 }
 
+
+#ayuda p {
+    margin-bottom: 16px;
+}
