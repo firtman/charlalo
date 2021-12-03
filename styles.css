@@ -143,9 +143,11 @@ textarea {
 }
 
 #pictogramas ul {
-    display: flex;
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     width: 100%;
-    overflow: scroll;
     scroll-snap-type: x mandatory;
 }
 
