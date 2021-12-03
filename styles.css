@@ -145,7 +145,7 @@ textarea {
 #pictogramas ul {
     display: grid;
     grid-auto-flow: row;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     width: 100%;
     scroll-snap-type: x mandatory;
