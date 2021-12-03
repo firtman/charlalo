@@ -1,220 +1,216 @@
 body {
-    margin: 0;
-    padding: 0;
-    --color-theme: #004aad;
-    --color-active: #dc6563;
-    --color-back-active: antiquewhite;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  --color-theme: #004aad;
+  --color-active: #dc6563;
+  --color-back-active: antiquewhite;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-
-
 ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 h1 {
-    text-align: center;
-    margin: 0;
+  text-align: center;
+  margin: 0;
 }
 
-h1>img {
-    width: 150px;
+h1 > img {
+  width: 150px;
 }
 
 header {
-    position: fixed;
-    top: 0;
-    background: white;
-    width: 100%;
-    background: var(--color-back-active);
+  position: fixed;
+  top: 0;
+  background: white;
+  width: 100%;
+  background: var(--color-back-active);
 }
 
-
-nav>ul {
-    display: flex;
-    justify-content: space-between;
-    justify-content: center;
+nav > ul {
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
 }
 
 nav li {
-    flex: 0 0 auto;
+  flex: 0 0 auto;
 }
 
 nav li a {
-    display: block;
-    padding: 16px 12px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 1em;
-    font-weight: bold;
-    color: var(--color-active);
-    border-right: 2px dashed rgba(194, 65, 51, 0.2);
+  display: block;
+  padding: 16px 12px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: bold;
+  color: var(--color-active);
+  border-right: 2px dashed rgba(194, 65, 51, 0.2);
 }
 
 nav li:last-child a {
-    border: 0;
+  border: 0;
 }
 
 main {
-    margin-top: 110px;
+  margin-top: 110px;
 }
 
-main>article {
-    padding: 16px;
-    display: none;
+main > article {
+  padding: 16px;
+  display: none;
 }
 
 @media (min-width: 400px) {
-    main {
-        padding: 0 10%;
-    }
+  main {
+    padding: 0 10%;
+  }
 }
 
 h2 {
-    color: var(--color-theme);
-    margin: 16px 0;
+  color: var(--color-theme);
+  margin: 16px 0;
 }
 
 #charla textarea {
-    width: 95%;
-    height: 50px;
+  width: 95%;
+  height: 50px;
 }
 
 #charla section {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
 #charla section button {
-    display: block;
-    text-align: center;
-    text-decoration: none;
-    padding: 16px;
-    margin: 8px;
-    font-size: 0.9em;
-    border: 0;
-    border-radius: 24px;
-    background-color: var(--color-active);
-    color: white;
-    font-weight: bold;
-    user-select: none;
-    -webkit-user-select: none;
-
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  padding: 16px;
+  margin: 8px;
+  font-size: 0.9em;
+  border: 0;
+  border-radius: 24px;
+  background-color: var(--color-active);
+  color: white;
+  font-weight: bold;
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 .hablando {
-    background-color: black !important;   
+  background-color: black !important;
 }
 
 #limpiar {
-    color: var(--color-active);
-    background-color: white;
-    margin: 10px;
-    font-size: 1.2em;
-    border: 0;
+  color: var(--color-active);
+  background-color: white;
+  margin: 10px;
+  font-size: 1.2em;
+  border: 0;
 }
 
 textarea {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 #charla li {
-    margin: 16px 0;
-    border-radius: 16px;
-    background-color: var(--color-back-active);
-    padding: 16px;
+  margin: 16px 0;
+  border-radius: 16px;
+  background-color: var(--color-back-active);
+  padding: 16px;
 }
 
 #charla li a {
-    text-decoration: none;
-    font-size: larger;
-    padding: 8px;
+  text-decoration: none;
+  font-size: larger;
+  padding: 8px;
 }
 
 #hablar:disabled {
-    background-color: white;
-    color: silver;
+  background-color: white;
+  color: silver;
 }
 #hablar:disabled::after {
-    content: ' 🎙 '
+  content: " 🎙 ";
 }
 
 #pictogramas ul {
-    display: flex;
-    width: 100%;
-    overflow: scroll;
-    scroll-snap-type: x mandatory;
+  display: flex;
+  width: 100%;
+  overflow: scroll;
+  scroll-snap-type: x mandatory;
 }
 
 #pictogramas a {
-    display: block;
-    margin: 4px;
-    text-decoration: none;
-    text-align: center;
-    color: var(--color-theme);
-    scroll-snap-align: center;
+  display: block;
+  margin: 4px;
+  text-decoration: none;
+  text-align: center;
+  color: var(--color-theme);
+  scroll-snap-align: center;
 }
 #pictogramas img {
-    width: 120px;
+  width: 120px;
 }
 #pictogramas li p {
-    background-color: var(--color-back-active);
-    padding: 16px;
-    color: black;
+  background-color: var(--color-back-active);
+  padding: 16px;
+  color: black;
 }
 footer p {
-    font-size: small;
-    color: gray;
+  font-size: small;
+  color: gray;
 }
-button, a {
-    user-select: none;
-    -webkit-user-select: none;
-
+button,
+a {
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 video {
-    width: 80%;
-    aspect-ratio: 1/1;
-    margin: 16px;
-    border: 2px solid gray;
+  width: 80%;
+  aspect-ratio: 1/1;
+  margin: 16px;
+  border: 2px solid gray;
 }
 
 #camara button {
-    font-size: 1.1em;
-    text-align: center;
-    padding: 12px;
+  font-size: 1.1em;
+  text-align: center;
+  padding: 12px;
 }
 #camara output {
-    display: block;
-    margin: 16px;
-    padding: 16px;
-    border: 1px dashed gray;
+  display: block;
+  margin: 16px;
+  padding: 16px;
+  border: 1px dashed gray;
 }
 #camara output:empty {
-    display: none;
+  display: none;
 }
 #camara a {
-    text-decoration: none;
-    font-size: larger;
-    padding: 8px;
+  text-decoration: none;
+  font-size: larger;
+  padding: 8px;
 }
 
 #instalar {
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    background-color: var(--color-theme);
-    color: white;
-    border: 0;
-    padding: 13px;
-    border-radius: 10px;
-    display: none;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background-color: var(--color-theme);
+  color: white;
+  border: 0;
+  padding: 13px;
+  border-radius: 10px;
+  display: none;
 }
 
-
 #ayuda p {
-    margin-bottom: 16px;
+  margin-bottom: 16px;
 }

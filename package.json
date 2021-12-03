@@ -1,0 +1,22 @@
+{
+  "name": "charlalo",
+  "version": "1.0.0",
+  "description": "Proyecto Chárlalo, una rápida app (PWA) que permite usar los servicios de Text-to-Speech y Speech Recognition de tu dispositivo.",
+  "main": "serviceworker.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vladgregorieu-globant/charlalo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vladgregorieu-globant/charlalo/issues"
+  },
+  "homepage": "https://github.com/vladgregorieu-globant/charlalo#readme",
+  "dependencies": {
+    "prettify": "^0.1.7"
+  }
+}
