@@ -1,5 +1,9 @@
 [
     {
+        "archivo": "necesito_ayuda.png",
+        "nombre": "necesito ayuda"
+    },    
+    {
         "archivo": "ciego.png",
         "nombre": "ciego"
     },
